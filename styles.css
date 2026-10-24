@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-ivory: #F7F3EC;
+  --primary-teal: #1F4E4A;
+  --teal-dark: #143532;
+  --teal-light: #2D6B66;
+  --secondary-sage: #8FA998;
+  --sage-light: #E2ECE5;
+  --sage-border: #BDD1C4;
+  --surface-sand: #E8DCC5;
+  --sand-light: #F4EFE6;
+  --sand-border: #D6C7A9;
+  --accent-terracotta: #C2654B;
+  --accent-light: #F7EAE6;
+  --clay-red: #A63D2F;
+  --clay-light: #F8E7E5;
+  --charcoal: #26302F;
+  --charcoal-muted: #596B68;
+  --white: #FFFFFF;
+  --radius-card: 20px;
+  --radius-sm: 10px;
+  --shadow-soft: 0 4px 24px -2px rgba(31, 78, 74, 0.08), 0 2px 8px -1px rgba(31, 78, 74, 0.04);
+  --shadow-hover: 0 10px 32px -4px rgba(31, 78, 74, 0.12), 0 4px 12px -2px rgba(31, 78, 74, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-ivory);
+  color: var(--charcoal);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Typography */
+.font-display {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Large text accessibility mode */
+body.large-text {
+  font-size: 1.15rem;
+}
+body.large-text h1 {
+  font-size: 2.5rem !important;
+}
+body.large-text h2 {
+  font-size: 2rem !important;
+}
+body.large-text h3 {
+  font-size: 1.5rem !important;
+}
+body.large-text .text-xs {
+  font-size: 0.95rem !important;
+}
+body.large-text .text-sm {
+  font-size: 1.05rem !important;
+}
+body.large-text button,
+body.large-text input,
+body.large-text textarea {
+  font-size: 1.1rem !important;
+  padding: 0.85rem 1.25rem !important;
+}
+
+/* Custom Soft Containers */
+.card-setu {
+  background: #FFFFFF;
+  border: 1px solid var(--sand-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  transition: all 0.25s ease;
+}
+
+.card-setu:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.card-sand {
+  background: var(--sand-light);
+  border: 1px solid var(--sand-border);
+  border-radius: var(--radius-card);
+}
+
+.card-sage {
+  background: var(--sage-light);
+  border: 1px solid var(--sage-border);
+  border-radius: var(--radius-card);
+}
+
+/* Interactive Buttons */
+.btn-primary {
+  background-color: var(--primary-teal);
+  color: #FFFFFF;
+  padding: 0.65rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  min-height: 44px;
+}
+
+.btn-primary:hover {
+  background-color: var(--teal-dark);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--sand-light);
+  color: var(--primary-teal);
+  border: 1px solid var(--sand-border);
+  padding: 0.6rem 1.15rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  min-height: 44px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--surface-sand);
+}
+
+.btn-urgent {
+  background-color: var(--clay-red);
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  transition: all 0.2s ease;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+.btn-urgent:hover {
+  background-color: #8C2F22;
+  transform: scale(1.02);
+}
+
+/* Chip Styles */
+.chip {
+  background: #FFFFFF;
+  border: 1px solid var(--sand-border);
+  color: var(--charcoal);
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.chip:hover {
+  background: var(--sand-light);
+  border-color: var(--primary-teal);
+  color: var(--primary-teal);
+}
+
+/* Triage Pulse Animation */
+.triage-pulse-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: background-color 0.4s ease;
+}
+
+.triage-pulse-dot::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.4;
+  animation: pulse-ring 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); opacity: 0.5; }
+  50% { transform: scale(1.8); opacity: 0; }
+  100% { transform: scale(0.9); opacity: 0; }
+}
+
+.pulse-green {
+  background-color: #2E7D32;
+}
+
+.pulse-amber {
+  background-color: #D97706;
+}
+
+.pulse-red {
+  background-color: var(--clay-red);
+}
+
+/* Chat Bubbles */
+.chat-bubble-bot {
+  background: #FFFFFF;
+  border: 1px solid var(--sand-border);
+  color: var(--charcoal);
+  border-radius: 16px 16px 16px 4px;
+  padding: 1rem 1.25rem;
+  max-width: 88%;
+  box-shadow: 0 2px 8px rgba(31, 78, 74, 0.04);
+}
+
+.chat-bubble-user {
+  background: var(--primary-teal);
+  color: #FFFFFF;
+  border-radius: 16px 16px 4px 16px;
+  padding: 0.9rem 1.2rem;
+  max-width: 82%;
+  margin-left: auto;
+}
+
+/* Speech Recording Indicator */
+.mic-active {
+  background-color: var(--clay-red) !important;
+  color: white !important;
+  animation: mic-pulse 1s infinite alternate;
+}
+
+@keyframes mic-pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); box-shadow: 0 0 12px rgba(166, 61, 47, 0.6); }
+}
+
+/* Severity Slider Customization */
+.custom-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #8FA998 0%, #E8DCC5 50%, #C2654B 80%, #A63D2F 100%);
+  outline: none;
+}
+
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--primary-teal);
+  border: 3px solid #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  transition: transform 0.1s ease;
+}
+
+.custom-range::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+/* Consult Brief Card (The Outlier Feature: Doctor-Ready Sheet) */
+.consult-sheet {
+  background: #FFFFFF;
+  border: 2px solid var(--sand-border);
+  border-radius: 20px;
+  box-shadow: 0 12px 36px -6px rgba(31, 78, 74, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.consult-sheet::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--primary-teal) 0%, var(--secondary-sage) 50%, var(--accent-terracotta) 100%);
+}
+
+.watermark-stamp {
+  border: 1.5px dashed var(--secondary-sage);
+  background-color: var(--sage-light);
+  color: var(--primary-teal);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+}
+
+/* Camera Live Viewfinder & Sage Scan-Line Animation */
+.camera-viewfinder-frame {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #143532;
+  border: 2px solid var(--secondary-sage);
+  box-shadow: 0 8px 32px rgba(31, 78, 74, 0.2);
+}
+
+.camera-scan-overlay {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  right: 10%;
+  bottom: 15%;
+  border: 2px dashed rgba(143, 169, 152, 0.8);
+  border-radius: 16px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.camera-scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  background: linear-gradient(90deg, transparent, #8FA998, #BDD1C4, #8FA998, transparent);
+  box-shadow: 0 0 10px rgba(143, 169, 152, 0.6);
+  animation: sage-scan 3.5s ease-in-out infinite;
+}
+
+@keyframes sage-scan {
+  0% { top: 0%; opacity: 0.3; }
+  50% { top: 96%; opacity: 1; }
+  100% { top: 0%; opacity: 0.3; }
+}
+
+/* Emergency Countdown Ring */
+.countdown-ring-svg {
+  transform: rotate(-90deg);
+}
+
+.countdown-ring-bg {
+  stroke: #F4EFE6;
+}
+
+.countdown-ring-progress {
+  stroke: var(--clay-red);
+  stroke-dasharray: 251.2;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+}
+
+/* Print Styles for Consultation Brief */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #consult-brief-printable,
+  #consult-brief-printable * {
+    visibility: visible;
+  }
+  #consult-brief-printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none !important;
+    border: 1px solid #999 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

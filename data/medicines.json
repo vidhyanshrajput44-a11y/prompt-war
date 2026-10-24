@@ -1,0 +1,642 @@
+[
+  {
+    "id": "paracetamol",
+    "brandNames": ["Paracip-500", "Paracip 500", "Paracip", "Paracip 650", "Calpol 500", "Calpol", "Dolo 650", "Dolo", "Crocin", "Paracetamol", "Paracetamol IP", "Paracetamol 500", "Paracetamol 650", "P-650", "Pacimol", "Calpol 650", "Febrinil"],
+    "generic": "Paracetamol (Acetaminophen)",
+    "category": "Antipyretic & Mild Analgesic",
+    "prescriptionRequired": false,
+    "usedFor": {
+      "en": "Relief of mild to moderate fever, headaches, body ache, and post-vaccination soreness.",
+      "hi": "हल्के से मध्यम बुखार, सिरदर्द, बदन दर्द और टीकाकरण के बाद के दर्द में राहत।"
+    },
+    "howItWorks": {
+      "en": "Acts centrally in the brain to block prostaglandin synthesis and reset the hypothalamic temperature regulator.",
+      "hi": "मस्तिष्क में दर्द और बुखार के संकेतों (प्रोस्टाग्लैंडीन) को नियंत्रित करता है।"
+    },
+    "sideEffects": {
+      "en": ["Nausea in rare cases", "Mild gastric discomfort if taken without food", "Liver toxicity on excessive overdose"],
+      "hi": ["हल्की मिचली", "खाली पेट लेने पर पेट में हल्का भारीपन", "अत्यधिक मात्रा में लेने पर लिवर को नुकसान"]
+    },
+    "cautions": {
+      "en": ["Do not combine with other medicines containing paracetamol to prevent overdose.", "Avoid alcohol consumption during treatment."],
+      "hi": ["पैरासिटामोल युक्त अन्य दवाओं के साथ न लें ताकि ओवरडोज न हो।", "शराब के साथ न लें।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Individuals with severe pre-existing liver disease or chronic alcoholism.", "Known hypersensitivity to paracetamol."],
+      "hi": ["गंभीर लिवर रोग से पीड़ित व्यक्ति।", "पैरासिटामोल से एलर्जी वाले लोग।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["liver disease", "cirrhosis", "hepatitis", "severe liver failure"],
+      "contraindicatedAllergies": ["paracetamol", "acetaminophen"],
+      "interactsWithMeds": ["warfarin", "alcohol", "isoniazid"]
+    }
+  },
+  {
+    "id": "ibuprofen",
+    "brandNames": ["Brufen", "Combiflam", "Ibugesic", "Ibuprofen"],
+    "generic": "Ibuprofen",
+    "category": "Non-Steroidal Anti-Inflammatory Drug (NSAID)",
+    "prescriptionRequired": false,
+    "usedFor": {
+      "en": "Pain relief for dental pain, musculoskeletal strain, arthritis, and inflammatory swelling.",
+      "hi": "दांत दर्द, जोड़ों का दर्द, मांसपेशियों में खिंचाव व सूजन में राहत।"
+    },
+    "howItWorks": {
+      "en": "Inhibits COX-1 and COX-2 enzymes to suppress inflammatory prostaglandins.",
+      "hi": "सूजन और दर्द पैदा करने वाले एंजाइम को रोकता है।"
+    },
+    "sideEffects": {
+      "en": ["Stomach irritation or acidity", "Heartburn", "Increased blood pressure with long-term use"],
+      "hi": ["पेट में जलन या एसिडिटी", "सीने में जलन", "लंबे समय तक लेने पर बीपी बढ़ सकता है"]
+    },
+    "cautions": {
+      "en": ["Always take with or after food. Not recommended during active dengue/suspected viral bleeding."],
+      "hi": ["हमेशा भोजन के बाद लें। डेंगू या ब्लीडिंग के संदेह में कभी न लें।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Patients with active peptic ulcers, chronic kidney disease (CKD), uncontrolled hypertension, or asthma sensitive to NSAIDs."],
+      "hi": ["पेट में अल्सर, किडनी रोग, गंभीर हाई बीपी, या एस्पिरिन/दर्द निवारक से सांस फूलने वाले मरीज।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["peptic ulcer", "stomach ulcer", "kidney disease", "renal failure", "hypertension", "asthma", "heart disease"],
+      "contraindicatedAllergies": ["ibuprofen", "nsaid", "aspirin"],
+      "interactsWithMeds": ["aspirin", "blood thinner", "warfarin", "ace inhibitors", "diuretics"]
+    }
+  },
+  {
+    "id": "pantoprazole",
+    "brandNames": ["Pan 40", "Pantocid", "Pantosec", "Pan-D", "Pantoprazole"],
+    "generic": "Pantoprazole Sodium",
+    "category": "Proton Pump Inhibitor (PPI / Antacid)",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "Treatment of gastroesophageal reflux disease (GERD), hyperacidity, stomach ulcers, and protection with pain medications.",
+      "hi": "एसिड रिफ्लक्स, सीने में जलन, पेट के छाले (अल्सर) और एसिडिटी से बचाव।"
+    },
+    "howItWorks": {
+      "en": "Shuts down the gastric proton pump (H+/K+ ATPase) in stomach wall cells to dramatically lower acid secretion.",
+      "hi": "पेट की दीवारों में एसिड बनाने वाले पंप को अस्थायी रूप से धीमा करता है।"
+    },
+    "sideEffects": {
+      "en": ["Mild headache", "Diarrhea or flatulence", "Reduced B12 absorption with prolonged uninterrupted use"],
+      "hi": ["हल्का सिरदर्द", "दस्त या पेट में गैस", "लंबे समय तक लेने पर विटामिन B12 की कमी"]
+    },
+    "cautions": {
+      "en": ["Commonly taken 30-45 minutes before breakfast on an empty stomach."],
+      "hi": ["आमतौर पर सुबह खाली पेट नाश्ते से 30-45 मिनट पहले लिया जाता है।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Known hypersensitivity to substituted benzimidazoles.", "Severe hypomagnesemia without doctor supervision."],
+      "hi": ["पेंटोप्राजोल से गंभीर एलर्जी वाले मरीज।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["osteoporosis", "severe hypomagnesemia"],
+      "contraindicatedAllergies": ["pantoprazole", "omeprazole", "ppi"],
+      "interactsWithMeds": ["atazanavir", "methotrexate", "clopidogrel"]
+    }
+  },
+  {
+    "id": "cetirizine",
+    "brandNames": ["Cetzine", "Okacet", "Alerid", "Zyrtec", "Cetirizine"],
+    "generic": "Cetirizine Hydrochloride",
+    "category": "Second-Generation Antihistamine",
+    "prescriptionRequired": false,
+    "usedFor": {
+      "en": "Allergic rhinitis, sneezing, runny nose, itchy watery eyes, and hives (urticaria).",
+      "hi": "एलर्जी, छींकें, बहती नाक, आंखों में खुजली और त्वचा पर चकत्ते (पित्ती)।"
+    },
+    "howItWorks": {
+      "en": "Selectively blocks peripheral H1 histamine receptors to halt the allergic cascade.",
+      "hi": "एलर्जी पैदा करने वाले हिस्टामाइन रसायन को रोकता है।"
+    },
+    "sideEffects": {
+      "en": ["Mild drowsiness in some individuals", "Dry mouth", "Fatigue"],
+      "hi": ["हल्की नींद या सुस्ती", "मुंह सूखना", "थकान"]
+    },
+    "cautions": {
+      "en": ["Avoid driving or operating heavy machinery until you know how it affects your alertness. Avoid alcohol."],
+      "hi": ["लेने के बाद गाड़ी चलाने या भारी मशीन चलाने से बचें। शराब से परहेज करें।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Patients with severe end-stage renal impairment.", "Hypersensitivity to cetirizine or hydroxyzine."],
+      "hi": ["गंभीर किडनी खराबी वाले मरीज।", "सिट्रीजीन से एलर्जी वाले लोग।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["severe renal failure", "urinary retention", "prostatic hypertrophy"],
+      "contraindicatedAllergies": ["cetirizine", "hydroxyzine"],
+      "interactsWithMeds": ["sedatives", "alcohol", "sleeping pills"]
+    }
+  },
+  {
+    "id": "metformin",
+    "brandNames": ["Glycomet", "Glyciphage", "Obimet", "Metformin 500mg", "Metformin SR"],
+    "generic": "Metformin Hydrochloride",
+    "category": "Oral Antidiabetic (Biguanide)",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "First-line management of Type 2 diabetes mellitus to normalize blood glucose levels.",
+      "hi": "टाइप 2 डायबिटीज में रक्त शर्करा (ब्लड शुगर) को नियंत्रित करने की प्राथमिक दवा।"
+    },
+    "howItWorks": {
+      "en": "Reduces hepatic glucose production, decreases intestinal glucose absorption, and improves insulin sensitivity.",
+      "hi": "लिवर में अतिरिक्त ग्लूकोज बनने से रोकता है और इंसुलिन की कार्यक्षमता बढ़ाता है।"
+    },
+    "sideEffects": {
+      "en": ["Nausea, metallic taste", "Diarrhea or loose stools early in treatment", "Abdominal bloating"],
+      "hi": ["मुंह में धातु जैसा स्वाद", "शुरुआत में दस्त या पेट में मरोड़", "पेट फूलना"]
+    },
+    "cautions": {
+      "en": ["Take with or immediately after meals to reduce stomach upset. Must be temporarily stopped before IV contrast radiology scans."],
+      "hi": ["पेट की परेशानी से बचने के लिए भोजन के साथ या तुरंत बाद लें। सीटी स्कैन जैसे जांच से पहले डॉक्टर को बताएं।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Severe renal impairment (eGFR < 30 mL/min), acute metabolic acidosis, severe heart failure, or heavy binge drinking."],
+      "hi": ["गंभीर किडनी रोग, हार्ट फेलियर, या शराब की लत से पीड़ित मरीज।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["severe renal impairment", "chronic kidney disease", "heart failure", "metabolic acidosis", "lactic acidosis"],
+      "contraindicatedAllergies": ["metformin"],
+      "interactsWithMeds": ["radiological iodinated contrast", "alcohol", "cimetidine"]
+    }
+  },
+  {
+    "id": "amoxicillin",
+    "brandNames": ["Mox 500", "Novamox", "Amoxyclav", "Augmentin", "Amoxicillin"],
+    "generic": "Amoxicillin (+/- Clavulanic Acid)",
+    "category": "Broad-Spectrum Penicillin Antibiotic",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "Bacterial infections of the chest (bronchitis), ear, nose, throat, skin, and urinary tract.",
+      "hi": "फेफड़ों, गले, कान, मूत्र मार्ग और त्वचा के जीवाणु (बैक्टीरियल) संक्रमण का इलाज।"
+    },
+    "howItWorks": {
+      "en": "Inhibits bacterial cell wall synthesis during active bacterial multiplication, leading to cell breakdown.",
+      "hi": "बैक्टीरिया की सुरक्षात्मक दीवार को नष्ट कर उन्हें खत्म करता है।"
+    },
+    "sideEffects": {
+      "en": ["Diarrhea or loose stools", "Nausea or mild stomach upset", "Skin rash or thrush"],
+      "hi": ["दस्त", "पेट खराब या मिचली", "त्वचा पर चकत्ते"]
+    },
+    "cautions": {
+      "en": ["Never stop early; complete full prescribed antibiotic course to prevent antimicrobial resistance. Ineffective against viral colds/coughs."],
+      "hi": ["कोर्स बीच में अधूरा न छोड़ें ताकि बैक्टीरिया प्रतिरोधी न बनें। सामान्य सर्दी-जुकाम जैसे वायरस पर असर नहीं करता।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["CRITICAL: Anyone with a known history of penicillin, ampicillin, or cephalosporin allergy (risk of anaphylaxis)."],
+      "hi": ["अति आवश्यक: पेनिसिलिन या सेफलोस्पोरिन दवाओं से एलर्जी वाले मरीज कभी न लें (जानलेवा रिएक्शन का खतरा)।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["mononucleosis", "liver dysfunction with past clavulanate use"],
+      "contraindicatedAllergies": ["penicillin", "amoxicillin", "ampicillin", "cephalosporin"],
+      "interactsWithMeds": ["methotrexate", "oral contraceptives", "warfarin", "allopurinol"]
+    }
+  },
+  {
+    "id": "azithromycin",
+    "brandNames": ["Azee 500", "Azithral", "Zithromax", "Azithromycin"],
+    "generic": "Azithromycin",
+    "category": "Macrolide Antibiotic",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "Bacterial respiratory tract infections, tonsillitis, sinusitis, community-acquired pneumonia, and typhoid.",
+      "hi": "फेफड़ों, टॉन्सिल, साइनस, निमोनिया और टाइफाइड जैसे बैक्टीरियल संक्रमण का इलाज।"
+    },
+    "howItWorks": {
+      "en": "Binds to the 50S ribosomal subunit of susceptible bacteria, suppressing protein synthesis.",
+      "hi": "बैक्टीरिया में प्रोटीन बनने की प्रक्रिया को रोककर उनके विकास को समाप्त करता है।"
+    },
+    "sideEffects": {
+      "en": ["Abdominal cramps", "Diarrhea", "Nausea", "Rare cardiac QT prolongation"],
+      "hi": ["पेट में मरोड़", "दस्त", "मिचली", "हृदय धड़कन में असंतुलन (दुर्लभ)"]
+    },
+    "cautions": {
+      "en": ["Take 1 hour before or 2 hours after meals, or as advised. Strictly avoid overuse for simple viral throat soreness."],
+      "hi": ["भोजन से 1 घंटा पहले या 2 घंटे बाद लें। वायरल गले के दर्द में बिना डॉक्टर की सलाह के न लें।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Patients with pre-existing cardiac arrhythmia, long QT syndrome, or severe hepatic failure."],
+      "hi": ["हृदय की धड़कन की बीमारी (Arrhythmia) या गंभीर लिवर रोग वाले लोग।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["long qt syndrome", "arrhythmia", "liver disease", "myasthenia gravis"],
+      "contraindicatedAllergies": ["azithromycin", "erythromycin", "macrolide"],
+      "interactsWithMeds": ["antacids containing aluminum/magnesium", "digoxin", "warfarin"]
+    }
+  },
+  {
+    "id": "amlodipine",
+    "brandNames": ["Amlong", "Stamlo", "Amlip", "Amlodipine 5mg"],
+    "generic": "Amlodipine Besylate",
+    "category": "Calcium Channel Blocker (Antihypertensive)",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "Long-term control of high blood pressure (hypertension) and prevention of angina chest pain.",
+      "hi": "उच्च रक्तचाप (हाई ब्लड प्रेशर) को नियंत्रित करने और सीने में दर्द (एंजाइना) की रोकथाम।"
+    },
+    "howItWorks": {
+      "en": "Relaxes arterial smooth muscle cells to dilate peripheral blood vessels, lowering vascular resistance.",
+      "hi": "रक्त नलिकाओं को शिथिल और चौड़ा करके रक्तचाप को कम करता है।"
+    },
+    "sideEffects": {
+      "en": ["Peripheral ankle/pedal swelling (edema)", "Flushing or warmth", "Headache or dizziness"],
+      "hi": ["टखनों और पैरों में हल्की सूजन", "चेहरे पर गर्माहट या लाली", "चक्कर या सिरदर्द"]
+    },
+    "cautions": {
+      "en": ["Take once daily at the same time. Never abruptly discontinue without physician consultation."],
+      "hi": ["प्रतिदिन एक ही निश्चित समय पर लें। डॉक्टर से पूछे बिना अचानक दवा बंद न करें।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Severe hypotension (systolic BP < 90 mmHg), cardiogenic shock, or severe aortic stenosis."],
+      "hi": ["बहुत कम रक्तचाप (लो बीपी) या गंभीर हृदय रोग वाले मरीज।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["severe hypotension", "cardiogenic shock", "aortic stenosis"],
+      "contraindicatedAllergies": ["amlodipine", "dihydropyridine"],
+      "interactsWithMeds": ["simvastatin", "diltiazem", "grapefruit juice"]
+    }
+  },
+  {
+    "id": "telmisartan",
+    "brandNames": ["Telma 40", "Telsar", "Telmikind", "Telmisartan"],
+    "generic": "Telmisartan",
+    "category": "Angiotensin II Receptor Blocker (ARB)",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "Hypertension management and cardiovascular risk reduction in adults.",
+      "hi": "हाई ब्लड प्रेशर को कम करने और दिल के दौरे के जोखिम से बचाव।"
+    },
+    "howItWorks": {
+      "en": "Blocks angiotensin II from binding to AT1 receptors, preventing vasoconstriction and aldosterone release.",
+      "hi": "रक्त नलिकाओं को सिकोड़ने वाले हार्मोन को रोककर बीपी कम रखता है।"
+    },
+    "sideEffects": {
+      "en": ["Dizziness on standing up quickly", "Back pain or sinus congestion", "Elevated potassium (hyperkalemia)"],
+      "hi": ["अचानक खड़े होने पर चक्कर आना", "पीठ दर्द", "खून में पोटेशियम का स्तर बढ़ना"]
+    },
+    "cautions": {
+      "en": ["Strictly contraindicated in pregnancy. Periodic monitoring of blood pressure, serum potassium, and kidney function."],
+      "hi": ["गर्भावस्था में कतई न लें (शिशु के लिए घातक)। समय-समय पर किडनी और पोटेशियम की जांच कराएं।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Pregnant women, bilateral renal artery stenosis, severe biliary obstruction."],
+      "hi": ["गर्भवती महिलाएं, दोनों गुर्दों की नसों में सिकुड़न वाले मरीज।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["pregnancy", "bilateral renal artery stenosis", "hyperkalemia"],
+      "contraindicatedAllergies": ["telmisartan", "losartan", "arb"],
+      "interactsWithMeds": ["potassium supplements", "spironolactone", "nsaids", "lithium"]
+    }
+  },
+  {
+    "id": "ors",
+    "brandNames": ["Electral", "WHO-ORS", "Prolyte ORS", "ORS Sachet"],
+    "generic": "Oral Rehydration Salts (WHO Formula)",
+    "category": "Electrolyte Replenisher",
+    "prescriptionRequired": false,
+    "usedFor": {
+      "en": "Prevention and treatment of dehydration caused by acute diarrhea, vomiting, heat exhaustion, or excessive sweating.",
+      "hi": "दस्त, उल्टी, लू या अत्यधिक पसीने से शरीर में पानी और लवण (इलेक्ट्रोलाइट) की कमी दूर करना।"
+    },
+    "howItWorks": {
+      "en": "Leverages glucose-sodium cotransport in the small intestine to rapidly absorb water and vital ions into the bloodstream.",
+      "hi": "आंतों में पानी और आवश्यक मिनरल्स को तेजी से सोखकर निर्जलीकरण (डिहाइड्रेशन) रोकता है।"
+    },
+    "sideEffects": {
+      "en": ["Extremely safe; mild nausea if drunk too rapidly in huge gulps."],
+      "hi": ["पूरी तरह सुरक्षित; बहुत तेजी से एक साथ पीने पर हल्की मिचली हो सकती है।"]
+    },
+    "cautions": {
+      "en": ["Always dissolve standard WHO packet in EXACTLY 1 Liter of clean drinking water. Do not mix with milk or juice."],
+      "hi": ["पूरा पैकेट ठीक 1 लीटर साफ पीने के पानी में ही घोलें। दूध या सूप में न मिलाएं। 24 घंटे में नया घोल बनाएं।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Persistent severe vomiting requiring IV fluids, paralytic ileus, or acute intestinal blockage."],
+      "hi": ["लगातार उल्टी होने पर जब मरीज मुंह से कुछ न ले सके, या आंतों में रुकावट हो।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["intestinal obstruction", "anuria", "severe vomiting"],
+      "contraindicatedAllergies": [],
+      "interactsWithMeds": []
+    }
+  },
+  {
+    "id": "omeprazole",
+    "brandNames": ["Omez", "Omee", "Omeprazole 20mg"],
+    "generic": "Omeprazole",
+    "category": "Proton Pump Inhibitor (Antacid)",
+    "prescriptionRequired": false,
+    "usedFor": {
+      "en": "Heartburn, acid indigestion, duodenal ulcers, and stomach irritation.",
+      "hi": "सीने में जलन, खट्टी डकारें, बदहजमी और पेट के अल्सर में आराम।"
+    },
+    "howItWorks": {
+      "en": "Suppresses gastric acid production by specific inhibition of the H+/K+-ATPase enzyme system.",
+      "hi": "पेट में अत्यधिक एसिड के बनने को रोकता है।"
+    },
+    "sideEffects": {
+      "en": ["Stomach cramps", "Constipation or diarrhea", "Headache"],
+      "hi": ["पेट में हल्का दर्द", "कब्ज या दस्त", "सिरदर्द"]
+    },
+    "cautions": {
+      "en": ["Swallow capsule whole with water; do not crush or chew."],
+      "hi": ["कैप्सूल को पानी के साथ पूरा निगलें, चबाएं या तोड़ें नहीं।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Hypersensitivity to omeprazole.", "Concomitant use with nelfinavir."],
+      "hi": ["ओमेप्राजोल से एलर्जी वाले लोग।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["severe liver failure", "osteoporosis with long term use"],
+      "contraindicatedAllergies": ["omeprazole", "pantoprazole", "ppi"],
+      "interactsWithMeds": ["clopidogrel", "warfarin", "digoxin"]
+    }
+  },
+  {
+    "id": "asthalin",
+    "brandNames": ["Asthalin Inhaler", "Ventorlin", "Salbutamol"],
+    "generic": "Salbutamol (Albuterol) Inhaler",
+    "category": "Short-Acting Beta-2 Agonist (Bronchodilator)",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "Rapid rescue relief of bronchospasm, asthma attacks, wheezing, and COPD breathlessness.",
+      "hi": "अस्थमा के दौरे, सांस फूलने, घरघराहट और सीने में जकड़न में तुरंत राहत।"
+    },
+    "howItWorks": {
+      "en": "Stimulates beta-2 adrenergic receptors in bronchial smooth muscles, causing rapid airway dilation.",
+      "hi": "सांस की नलियों की मांसपेशियों को तुरंत फैलाकर सांस लेना आसान बनाता है।"
+    },
+    "sideEffects": {
+      "en": ["Mild hand tremors", "Rapid heartbeat or palpitations", "Restlessness"],
+      "hi": ["हाथों में हल्की कंपकंपी", "दिल की धड़कन तेज होना", "बेचैनी"]
+    },
+    "cautions": {
+      "en": ["Rinse mouth with water after use. Always keep rescue inhaler within arm's reach for sudden attacks."],
+      "hi": ["उपयोग के बाद पानी से कुल्ला करें। आपातकालीन दौरे के लिए इनहेलर हमेशा पास रखें।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Severe uncontrolled tachyarrhythmia.", "Allergy to salbutamol."],
+      "hi": ["दिल की असामान्य तेज धड़कन वाले मरीज।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["severe tachyarrhythmia", "uncontrolled thyrotoxicosis"],
+      "contraindicatedAllergies": ["salbutamol", "albuterol"],
+      "interactsWithMeds": ["beta blockers", "propranolol", "atenolol"]
+    }
+  },
+  {
+    "id": "atorvastatin",
+    "brandNames": ["Atorva", "Storvas", "Lipitor", "Atorvastatin 10mg"],
+    "generic": "Atorvastatin Calcium",
+    "category": "HMG-CoA Reductase Inhibitor (Statin / Lipid Lowering)",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "Lowering bad cholesterol (LDL) and triglycerides, and reducing cardiovascular heart attack risks.",
+      "hi": "खराब कोलेस्ट्रॉल (LDL) और ट्राइग्लिसराइड्स को घटाना व दिल के दौरे से बचाव।"
+    },
+    "howItWorks": {
+      "en": "Competitively inhibits HMG-CoA reductase, the rate-limiting enzyme in cholesterol biosynthesis in the liver.",
+      "hi": "लिवर में कोलेस्ट्रॉल बनाने वाले मुख्य एंजाइम को नियंत्रित करता है।"
+    },
+    "sideEffects": {
+      "en": ["Muscle aches or stiffness (myalgia)", "Mild elevation in liver enzymes", "Constipation or gas"],
+      "hi": ["मांसपेशियों में दर्द या अकड़न", "लिवर एंजाइम में हल्का बदलाव", "पेट में गैस"]
+    },
+    "cautions": {
+      "en": ["Report unexplained muscle pain or brown urine to your doctor immediately. Usually taken at night."],
+      "hi": ["मांसपेशियों में अत्यधिक दर्द या गहरे रंग का पेशाब होने पर तुरंत डॉक्टर को बताएं। आमतौर पर रात में लिया जाता है।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Active liver disease, unexplained persistent elevations of transaminases, pregnancy, and breastfeeding."],
+      "hi": ["सक्रिय लिवर रोग, गर्भवती और स्तनपान कराने वाली महिलाएं।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["active liver disease", "pregnancy", "breastfeeding"],
+      "contraindicatedAllergies": ["atorvastatin", "statin"],
+      "interactsWithMeds": ["gemfibrozil", "clarithromycin", "cyclosporine"]
+    }
+  },
+  {
+    "id": "ciprofloxacin",
+    "brandNames": ["Ciplox 500", "Cifran", "Ciprolet", "Ciprofloxacin"],
+    "generic": "Ciprofloxacin Hydrochloride",
+    "category": "Fluoroquinolone Antibiotic",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "Complicated urinary tract infections, severe infectious diarrhea, typhoid fever, and bone/joint infections.",
+      "hi": "मूत्र मार्ग (UTI), गंभीर दस्त, टाइफाइड और हड्डियों के गंभीर बैक्टीरियल संक्रमण का इलाज।"
+    },
+    "howItWorks": {
+      "en": "Inhibits bacterial DNA gyrase and topoisomerase IV, preventing bacterial DNA replication and repair.",
+      "hi": "बैक्टीरिया के डीएनए निर्माण को बाधित कर उन्हें नष्ट करता है।"
+    },
+    "sideEffects": {
+      "en": ["Nausea, abdominal discomfort", "Sunlight sensitivity (phototoxicity)", "Risk of tendon pain/tendinitis"],
+      "hi": ["उल्टी या पेट दर्द", "धूप से त्वचा पर संवेदनशीलता", "पैरों के टेंडन (मांसपेशी के जोड़) में दर्द का जोखिम"]
+    },
+    "cautions": {
+      "en": ["Drink plenty of water to prevent crystalluria. Avoid calcium-fortified milk or antacids within 2 hours of dosing."],
+      "hi": ["खूब पानी पिएं। दूध, दही या एंटासिड दवा के साथ तुरंत न लें (2 घंटे का अंतर रखें)।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["History of tendon rupture/tendinitis related to quinolones, myasthenia gravis, pregnancy."],
+      "hi": ["टेंडन की कमजोरी या टूटने का इतिहास, मायस्थेनिया ग्रेविस, या गर्भावस्था।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["myasthenia gravis", "tendonitis", "qt prolongation", "epilepsy"],
+      "contraindicatedAllergies": ["ciprofloxacin", "fluoroquinolone", "ofloxacin", "levofloxacin"],
+      "interactsWithMeds": ["theophylline", "tizanidine", "antacids", "iron supplements"]
+    }
+  },
+  {
+    "id": "sinarest",
+    "brandNames": ["Sinarest", "Coldarin", "Cheston Cold", "Wikoryl"],
+    "generic": "Paracetamol + Phenylephrine + Chlorpheniramine",
+    "category": "Combination Cold & Sinus Relief",
+    "prescriptionRequired": false,
+    "usedFor": {
+      "en": "Temporary relief of common cold, nasal congestion, runny nose, sinus pressure, fever, and headache.",
+      "hi": "सर्दी-जुकाम, बंद नाक, छींकें, साइनस का दबाव, हल्का बुखार और सिरदर्द में राहत।"
+    },
+    "howItWorks": {
+      "en": "Decongests nasal passages (phenylephrine), blocks histamine allergy responses (CPM), and reduces fever (paracetamol).",
+      "hi": "बंद नाक खोलता है, छींकों को रोकता है और सिरदर्द-बुखार कम करता है।"
+    },
+    "sideEffects": {
+      "en": ["Drowsiness, dry mouth", "Temporary rise in blood pressure or heart rate", "Restlessness in some"],
+      "hi": ["सुस्ती या नींद आना, मुंह सूखना", "रक्तचाप (बीपी) या दिल की धड़कन बढ़ना", "बेचैनी"]
+    },
+    "cautions": {
+      "en": ["Contains a decongestant that elevates blood pressure. Do not take with other paracetamol medicines."],
+      "hi": ["इसमें मौजूद घटक बीपी बढ़ा सकता है। हाई बीपी के मरीज डॉक्टर से पूछकर ही लें।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Patients with uncontrolled severe hypertension, angle-closure glaucoma, or severe coronary artery disease."],
+      "hi": ["अनियंत्रित हाई बीपी, ग्लूकोमा, या गंभीर हृदय रोग वाले लोग।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["uncontrolled hypertension", "severe coronary artery disease", "glaucoma", "urinary retention"],
+      "contraindicatedAllergies": ["paracetamol", "chlorpheniramine", "phenylephrine"],
+      "interactsWithMeds": ["maoi inhibitors", "beta blockers", "alcohol"]
+    }
+  },
+  {
+    "id": "montair_lc",
+    "brandNames": ["Montair-LC", "Monticope", "Levocet-M", "Montek-LC"],
+    "generic": "Montelukast + Levocetirizine",
+    "category": "Antileukotriene + Antihistamine",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "Allergic asthma prevention, chronic seasonal allergic rhinitis, and persistent hives.",
+      "hi": "एलर्जी जनित अस्थमा की रोकथाम, पुरानी सर्दी-जुकाम और सांस की एलर्जी का नियंत्रण।"
+    },
+    "howItWorks": {
+      "en": "Levocetirizine blocks histamine receptors while Montelukast blocks cysteinyl leukotriene receptors in the airways.",
+      "hi": "सांस की नली में सूजन और एलर्जी पैदा करने वाले दो अलग-अलग रसायनों को रोकता है।"
+    },
+    "sideEffects": {
+      "en": ["Mild sleepiness, fatigue", "Headache", "Rare vivid dreams or mood changes"],
+      "hi": ["हल्की नींद या थकान", "सिरदर्द", "अजीब सपने या चिड़चिड़ापन (दुर्लभ)"]
+    },
+    "cautions": {
+      "en": ["Generally taken once daily in the evening. Not intended as an immediate rescue inhaler during an acute asthma attack."],
+      "hi": ["आमतौर पर शाम को लिया जाता है। अचानक सांस का दौरा पड़ने पर इनहेलर का ही प्रयोग करें।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Severe renal failure (eGFR < 10 mL/min), phenylketonuria (if chewable tabs contain aspartame)."],
+      "hi": ["गंभीर किडनी खराबी वाले मरीज।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["severe renal impairment", "depression or suicidal ideation"],
+      "contraindicatedAllergies": ["montelukast", "levocetirizine", "cetirizine"],
+      "interactsWithMeds": ["phenobarbital", "rifampin", "sedatives"]
+    }
+  },
+  {
+    "id": "diclofenac",
+    "brandNames": ["Voveran", "Dynapar", "Diclogel", "Diclofenac Sodium"],
+    "generic": "Diclofenac Sodium",
+    "category": "Potent NSAID (Pain & Anti-inflammatory)",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "Moderate to severe pain in osteoarthritis, rheumatoid arthritis, kidney stones (renal colic), and post-surgical pain.",
+      "hi": "गठिया, जोड़ों का गंभीर दर्द, पथरी का दर्द और चोट या ऑपरेशन के बाद के तीव्र दर्द में राहत।"
+    },
+    "howItWorks": {
+      "en": "Potent inhibitor of prostaglandin synthesis via cyclooxygenase (COX) blockade.",
+      "hi": "दर्द और सूजन के रसायनों को तेजी से निष्क्रिय करता है।"
+    },
+    "sideEffects": {
+      "en": ["Gastric ulceration or bleeding", "Elevation of blood pressure", "Fluid retention"],
+      "hi": ["पेट में तेज जलन या अल्सर", "ब्लड प्रेशर बढ़ना", "शरीर में पानी भरना"]
+    },
+    "cautions": {
+      "en": ["Use shortest effective duration. Always pair with food or an antacid/PPI. Avoid in dengue/bleeding risk."],
+      "hi": ["कम से कम समय के लिए लें। खाली पेट कभी न लें। डेंगू या ब्लीडिंग के संदेह में कभी न लें।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Established ischemic heart disease, peripheral arterial disease, congestive heart failure, or history of GI bleeding."],
+      "hi": ["दिल की बीमारी, हार्ट फेलियर, या पेट में अल्सर/ब्लीडिंग का इतिहास रखने वाले मरीज।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["heart failure", "ischemic heart disease", "peptic ulcer", "renal impairment", "hypertension"],
+      "contraindicatedAllergies": ["diclofenac", "nsaid", "aspirin"],
+      "interactsWithMeds": ["aspirin", "warfarin", "anticoagulants", "corticosteroids", "methotrexate"]
+    }
+  },
+  {
+    "id": "clopidogrel",
+    "brandNames": ["Deplatt", "Clopilet", "Plavix", "Clopidogrel 75mg"],
+    "generic": "Clopidogrel Bisulfate",
+    "category": "Antiplatelet Agent (Blood Thinner)",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "Prevention of blood clots following heart attack, ischemic stroke, or coronary stent placement.",
+      "hi": "हार्ट अटैक, स्ट्रोक, या स्टेंट डलने के बाद खून में थक्का (क्लॉट) जमने से बचाव।"
+    },
+    "howItWorks": {
+      "en": "Irreversibly inhibits the P2Y12 adenosine diphosphate receptor on platelets, preventing platelet aggregation.",
+      "hi": "रक्त कोशिकाओं (प्लेटलेट्स) को आपस में चिपकने से रोककर खून को पतला रखता है।"
+    },
+    "sideEffects": {
+      "en": ["Easy bruising or bleeding gums", "Longer bleeding time upon cuts", "Nosebleeds"],
+      "hi": ["चोट लगने पर आसानी से नील पड़ना", "मसूड़ों से खून आना", "कटने पर खून देर से रुकना"]
+    },
+    "cautions": {
+      "en": ["Inform dentists or surgeons prior to any procedure. Do not stop without cardiologist approval."],
+      "hi": ["दांत निकलवाने या ऑपरेशन से पहले डॉक्टर को अवश्य बताएं। दिल के डॉक्टर से पूछे बिना बंद न करें।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Active pathological bleeding, such as peptic ulcer or intracranial hemorrhage."],
+      "hi": ["सक्रिय आंतरिक रक्तस्राव (जैसे पेट का अल्सर या मस्तिष्क में ब्लीडिंग)।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["active bleeding", "intracranial hemorrhage", "peptic ulcer with bleeding"],
+      "contraindicatedAllergies": ["clopidogrel"],
+      "interactsWithMeds": ["aspirin", "heparin", "warfarin", "nsaids", "omeprazole"]
+    }
+  },
+  {
+    "id": "levothyroxine",
+    "brandNames": ["Thyronorm", "Eltroxin", "Thyrox", "Levothyroxine"],
+    "generic": "Levothyroxine Sodium",
+    "category": "Thyroid Hormone Replacement",
+    "prescriptionRequired": true,
+    "usedFor": {
+      "en": "Treatment of hypothyroidism (underactive thyroid gland) to restore normal metabolic energy.",
+      "hi": "हाइपोथायरायडिज्म (कम काम करने वाली थायराइड ग्रंथि) का उपचार और ऊर्जा संतुलन।"
+    },
+    "howItWorks": {
+      "en": "Synthetic form of natural thyroxine (T4), converted peripherally to active T3 to maintain baseline cellular metabolism.",
+      "hi": "शरीर में प्राकृतिक थायराइड हार्मोन की कमी को पूरा करता है।"
+    },
+    "sideEffects": {
+      "en": ["Weight changes", "Palpitations or heat intolerance if dose is too high", "Insomnia"],
+      "hi": ["वजन में उतार-चढ़ाव", "डोज ज्यादा होने पर दिल की धड़कन तेज होना या गर्मी लगना", "नींद न आना"]
+    },
+    "cautions": {
+      "en": ["Must be taken first thing in the morning with plain water, at least 30-60 minutes before breakfast, tea, or coffee."],
+      "hi": ["सुबह सोकर उठते ही खाली पेट केवल सादे पानी से लें। चाय, कॉफी या नाश्ते से कम से कम 30-45 मिनट पहले।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Untreated subclinical or overt thyrotoxicosis, uncorrected adrenal insufficiency."],
+      "hi": ["अनियंत्रित थायरोटॉक्सिकोसिस (अत्यधिक थायराइड) वाले मरीज।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["thyrotoxicosis", "uncorrected adrenal insufficiency", "acute myocardial infarction"],
+      "contraindicatedAllergies": ["levothyroxine"],
+      "interactsWithMeds": ["calcium supplements", "iron supplements", "antacids", "soy products"]
+    }
+  },
+  {
+    "id": "dextromethorphan",
+    "brandNames": ["Benadryl DR", "Ascoril D", "Alex Cough Syrup", "Chericof"],
+    "generic": "Dextromethorphan Hydrobromide",
+    "category": "Antitussive (Dry Cough Suppressant)",
+    "prescriptionRequired": false,
+    "usedFor": {
+      "en": "Relief of non-productive, dry, hacking cough caused by minor throat irritation.",
+      "hi": "सूखी खांसी, गले की खराश और बार-बार उठने वाली खांसी को शांत करना।"
+    },
+    "howItWorks": {
+      "en": "Suppresses the cough reflex by direct action on the cough center in the medulla.",
+      "hi": "मस्तिष्क के खांसी नियंत्रण केंद्र पर असर डालकर सूखी खांसी के आवेग को रोकता है।"
+    },
+    "sideEffects": {
+      "en": ["Dizziness or drowsiness", "Mild nausea", "Constipation"],
+      "hi": ["चक्कर या हल्की नींद", "हल्की मिचली", "कब्ज"]
+    },
+    "cautions": {
+      "en": ["Not for wet/productive cough with phlegm (clearing phlegm is protective). Diabetic patients should select sugar-free formulations."],
+      "hi": ["बलगम वाली खांसी में न लें। डायबिटीज के मरीज शुगर-फ्री सिरप का ही चयन करें।"]
+    },
+    "whoShouldAvoid": {
+      "en": ["Patients taking MAO inhibitors within the last 14 days (risk of serotonin syndrome), chronic bronchitis with heavy mucus."],
+      "hi": ["अवसाद की विशेष दवाएं (MAOIs) लेने वाले लोग या बलगम से फेफड़े जाम होने की स्थिति में।"]
+    },
+    "conflictRules": {
+      "contraindicatedConditions": ["asthma with heavy phlegm", "chronic bronchitis", "diabetes (sugar syrups)"],
+      "contraindicatedAllergies": ["dextromethorphan"],
+      "interactsWithMeds": ["maoi antidepressants", "ssri", "sedatives"]
+    }
+  }
+]

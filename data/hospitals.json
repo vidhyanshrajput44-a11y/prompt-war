@@ -1,0 +1,100 @@
+{
+  "defaultCoordinates": {
+    "lat": 28.5672,
+    "lng": 77.2100,
+    "label": "AIIMS Campus, New Delhi (Default Demo PIN: 110029)"
+  },
+  "hospitals": [
+    {
+      "id": "hosp-1",
+      "name": "AIIMS New Delhi (Apex Trauma & Emergency)",
+      "type": "Central Govt Apex Hospital & Trauma Centre",
+      "lat": 28.5672,
+      "lng": 77.2100,
+      "phone": "+911126588500",
+      "displayPhone": "011-26588500 / 108",
+      "address": "Sri Aurobindo Marg, Ansari Nagar, New Delhi",
+      "has_emergency": true,
+      "emergency_beds": 140,
+      "ayushman_pmjay": true
+    },
+    {
+      "id": "hosp-2",
+      "name": "Safdarjung Hospital & Vardhman Mahavir Medical College",
+      "type": "Central Govt Multi-Specialty Hospital",
+      "lat": 28.5702,
+      "lng": 77.2066,
+      "phone": "+911126165060",
+      "displayPhone": "011-26165060",
+      "address": "Ring Road, Opposite AIIMS, New Delhi",
+      "has_emergency": true,
+      "emergency_beds": 95,
+      "ayushman_pmjay": true
+    },
+    {
+      "id": "hosp-3",
+      "name": "Ram Manohar Lohia (RML) Hospital",
+      "type": "Central Govt Emergency & Disaster Care",
+      "lat": 28.6253,
+      "lng": 77.2014,
+      "phone": "+911123365525",
+      "displayPhone": "011-23365525",
+      "address": "Baba Kharak Singh Marg, Connaught Place, New Delhi",
+      "has_emergency": true,
+      "emergency_beds": 70,
+      "ayushman_pmjay": true
+    },
+    {
+      "id": "hosp-4",
+      "name": "Lok Nayak Jai Prakash (LNJP) Civil Hospital",
+      "type": "State Govt Teaching Hospital",
+      "lat": 28.6366,
+      "lng": 77.2407,
+      "phone": "+911123233000",
+      "displayPhone": "011-23233000",
+      "address": "Jawaharlal Nehru Marg, Delhi Gate, New Delhi",
+      "has_emergency": true,
+      "emergency_beds": 80,
+      "ayushman_pmjay": true
+    },
+    {
+      "id": "hosp-5",
+      "name": "Govind Ballabh Pant Institute (GIPMER)",
+      "type": "Govt Super-Specialty Cardiology & Neurology",
+      "lat": 28.6375,
+      "lng": 77.2415,
+      "phone": "+911123234242",
+      "displayPhone": "011-23234242",
+      "address": "1, Jawaharlal Nehru Marg, Raj Ghat, New Delhi",
+      "has_emergency": true,
+      "emergency_beds": 50,
+      "ayushman_pmjay": true
+    }
+  ],
+  "ambulances": [
+    {
+      "id": "amb-1",
+      "name": "CATS / 108 Govt Emergency Ambulance (Advanced Life Support)",
+      "phone": "108",
+      "type": "Government Free ALS Unit",
+      "baseEtaMin": 6,
+      "baseDistanceKm": 2.1
+    },
+    {
+      "id": "amb-2",
+      "name": "Red Cross Emergency First Responder Ambulance",
+      "phone": "+911123716441",
+      "type": "Voluntary BLS Unit",
+      "baseEtaMin": 10,
+      "baseDistanceKm": 3.8
+    },
+    {
+      "id": "amb-3",
+      "name": "National Highway / Central Trauma Quick Ambulance",
+      "phone": "112",
+      "type": "National Rapid Response Police/Medical",
+      "baseEtaMin": 8,
+      "baseDistanceKm": 2.9
+    }
+  ]
+}

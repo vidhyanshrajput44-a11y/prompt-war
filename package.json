@@ -1,0 +1,12 @@
+{
+  "name": "setu-healthcare-assistant",
+  "version": "1.0.0",
+  "description": "Setu: Healthcare Access Assistant for Ayushman Bharat, ABHA, and eSanjeevani",
+  "scripts": {
+    "start": "python3 -m http.server 5173",
+    "dev": "python3 -m http.server 5173",
+    "serve": "python3 -m http.server 5173"
+  },
+  "author": "Hackathon Team",
+  "license": "MIT"
+}
